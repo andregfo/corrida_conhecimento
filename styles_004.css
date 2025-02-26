@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(5, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 80px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    position: relative;
+}
+
+.cell-number {
+    font-size: 20px;
+    color: #666;
+}
+
+.players-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.player {
+    width: 15px; /* Tamanho da imagem */
+    height: 15px; /* Tamanho da imagem */
+    border-radius: 50%; /* Formato circular */
+    object-fit: cover; /* Garante que a imagem cubra o espaço */
+    cursor: pointer;
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
+    z-index: 1000; /* Garante que o modal fique acima de tudo */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-image {
+    max-width: 90vw;
+    max-height: 80vh; /* Ajuste para dar espaço ao nome */
+    border-radius: 10px;
+}
+
+.modal-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
