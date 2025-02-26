@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { name: "Mariana Luiz"      , position: 1, image: "11.png" },
         { name: "Milena Menezes"    , position: 2, image: "12.png" },
         { name: "Patricia Souza"    , position: 1, image: "13.png" },
-        { name: "Phillip Palhares"  , position: 8, image: "14.png" },
+        { name: "Phillip Palhares"  , position: 8, image: "Phillip.jpg" },
         { name: "Raica Pereira"     , position: 3, image: "15.png" },
         { name: "Samuel Oliveira"   , position: 4, image: "16.png" },
         { name: "Andre Oliveira"    , position: 50, image: "AndreOliveira.png" }
